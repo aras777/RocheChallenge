@@ -1,6 +1,4 @@
-# RocheChallenge
-
-TODO WebAPI
+# RocheChallenge TODO WebAPI
 
 This project uses specific commits convention based on conventional commits
 
