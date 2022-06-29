@@ -9,10 +9,10 @@ ENV \
     DOTNET_CLI_TELEMETRY_OPTOUT=1 \
     # Prevent hosting startup
     ASPNETCORE_PREVENTHOSTINGSTARTUP=true \
-	# Use port set in manifest json file
-	ASPNETCORE_URLS=http://*:80 \
+    # Use port set in manifest json file
+    ASPNETCORE_URLS=http://*:80 \
     # Set environment inside docker
-	ASPNETCORE_ENVIRONMENT=Production
+    ASPNETCORE_ENVIRONMENT=Production
 
 WORKDIR /app
 COPY . .
