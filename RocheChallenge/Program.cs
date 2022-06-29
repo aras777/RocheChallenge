@@ -1,12 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Microsoft.OpenApi.Models;
+using RocheChallenge.DbContexts;
 
 Console.WriteLine("TODO WebAPI started");
 
 #region APP
 
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = "Data Source=Todos.db";
+builder.Services.AddSqlite<TodoDbContext>(connectionString);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
